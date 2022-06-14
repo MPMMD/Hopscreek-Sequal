@@ -785,6 +785,7 @@ footer img{
     }
     .andre img{
         width: 30vw;
+        transition: ease .2s;
     }
     .andre h2{
         text-align: center;
@@ -792,7 +793,7 @@ footer img{
         margin-bottom: 1em;
     }
     .andre img:hover{
-        opacity: 0.7;
+        transform: scale(1.2);
     }
     .andre div a:nth-child(even){
         float: none;
