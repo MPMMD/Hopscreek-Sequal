@@ -1,0 +1,957 @@
+@font-face {
+    font-family: titleFont;
+    src: url(fonts/NexaBlack.otf);
+}
+@font-face {
+    font-family: altTitleFont;
+    src: url(fonts/NexaBold.otf);
+}
+:root{
+    --brødfont-color: white;
+}
+/* Edita Book fontweight, Book: 500 - Bold: 700 */
+*{
+    box-sizing: border-box;
+}
+/* smooth scroll til Vi er Hopscreek siden */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    color: var(--brødfont-color);
+    background-image: url(imgs/grain.png);
+    background-color: black;
+}
+
+h1,h2,h3{
+    margin-left: 37px;
+    margin-top: 0;
+    font-family: titleFont;
+    text-transform: uppercase;
+
+}
+h4,h5,h6{
+    font-family: edita;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+h1{
+    margin-top: 1.7em;
+}
+p{
+    margin-left: 37px;
+    margin-right: 37px;
+    /* edita book */
+    font-family: edita;
+    font-weight: 500;
+}
+a{
+    font-family: edita;
+    font-weight: 500;
+    color: var(--brødfont-color);
+    text-decoration: none;
+}
+/* fucker måske med nogle andre sider. Lavet pga. Vi Er Hopscreek siden */
+header a {
+    margin-left: 37px;
+}
+.landingpage h1{
+    margin-top: 0.7em;
+    margin-bottom: 0.3em;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 0;
+}
+.landingpage img{
+    width: 100vw;
+}
+footer{
+    text-align: center;
+}
+footer img{
+    width: 37px;
+    height: 37px;
+    margin: 0.5em;
+}
+/* Burger Menu */
+.mobileNav{
+    font-size: 20pt;
+    z-index: 2;
+    text-transform: uppercase;
+}
+.mobileNav .burgerMenu img{
+    margin-top: 0.5em;
+    width: 32px;
+    height: 24px;
+}
+.mobileNav #dropdown li{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.mobileNav li{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.mobileNav #dropdown{
+    display: none;
+}
+.mobileNav .burgerMenu {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0.2em;
+}
+.mobileNav a{
+    font-family: titleFont;
+    text-decoration: none;
+}
+.mobileNav .soMe{
+    display: none;
+    flex-direction: row;
+}
+.mobileNav .soMe a{
+    display: block;
+}
+.mobileNav .soMe li{
+    width: 10px;
+}
+.mobileNav-active{
+    text-decoration: underline;
+}
+/* burgerMenu icon */
+.mobileNav img{
+    width: 37px;
+    height: 37px;
+    margin-right: 37px;
+    float: left;
+    font-size: 12pt;
+}
+/* Musik siden */
+.musicHeader h1{margin-bottom: 0;}
+.newMusic h2{
+    font-size: 28px;
+    margin-bottom: 0.5em;
+}
+.newMusic h3{
+    text-decoration: none;
+    margin-bottom: 0;
+    font-size: 32px;
+}
+.newMusic iframe{
+    display: block;
+    margin: 1em auto;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+}
+.moreMusic div{
+    display: block;
+    text-align: center;
+}
+.moreMusic h2{
+    margin-top: 2em;
+}
+.musicLinks{
+    display: flex;
+    margin: 1em;
+    position: relative;
+    text-transform: uppercase;
+}
+.musicLinks ul{
+    padding: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.musicLinks li{
+    position: relative;
+    list-style: none;
+    text-align: left;
+    margin: 0.4em auto;
+    padding: 1em;
+    border: 1px solid white;
+    border-radius: 2em;
+    width: 80vw;
+    font-size: 28px;
+}
+.musicLinks a{
+    font-family: titleFont;
+    text-decoration: none;
+}
+.musicLinks img{
+    position: absolute;
+    right: 1em;
+    text-align: right;
+    width: 40px;
+    height: 40px;
+    /* transform:translateY(50%); */
+    margin-left: 1em;
+}
+
+/* KONCERTER */
+.months{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.months button{
+    width: 70px;
+    border-radius: 36px;
+    background-color: transparent;
+    color: var(--brødfont-color);
+    border-color: white;
+    text-transform: uppercase;
+    padding-top: 0.4em;
+    padding-bottom: 0.3em;
+    font-family: titleFont;
+    margin-bottom: 1em;
+}
+.tickets a{
+    font-size: 30pt;
+}
+.tickets p{
+    font-size: 21pt;
+}
+.tickets{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1em auto 1em auto;
+}
+.ticket{
+    margin-bottom: 2em;
+    border: 1px solid white;
+    text-align: center;
+}
+.ticket h2, .ticket h3,.ticket p{
+    margin-left: 0;
+}
+.ticket h3{
+    margin-top: 1em;
+}
+.ticket a {
+    font-weight: 700;
+}
+/* https://stackoverflow.com/questions/1269589/css-center-block-but-align-contents-to-the-left
+    centre text i midten, men med textalign left */
+.tickettext{
+    display: inline-block;
+    text-align: left;
+}
+.tickettext a{
+    text-decoration: underline;
+}
+/* OM HOPSCREEK */
+.omOsHeader img{display: none;}
+.omOsHeader h2{
+    font-family: edita;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+.omOsHeader p{
+    margin-right: 37px;
+}
+.omOsHeader h1{
+    margin-top: 0;
+}
+/* http://www.java2s.com/example/html-css/css-layout/alternating-left-and-right-positioning-with-css.html
+    nth-child(even) og (odd) så jeg rammer hver anden til at gå venstre og højre*/
+.medlemmer{
+    display: block;
+    margin-left: 37px;
+    margin-right: auto;
+}
+.medlem{
+    margin-top: 4em;
+    margin-bottom: 8em;
+}
+/* Customizing medlems titler til at fylde på den mindste skærm */
+.medlem-støv h2{
+    font-size: 19px !important;
+}
+.medlem-buch h2{
+    font-size: 18px !important;
+}
+.medlem-lyng h2{
+    font-size: 36px !important;
+}
+.medlem-pham h2{
+    font-size: 22px !important;
+}
+.medlem img{
+    width: 180px;
+    height: 180px;
+}
+.medlem:nth-child(even) img{
+    text-align: left;
+    float: left;
+    clear: left;
+    margin-right: 1em;
+}
+.medlem:nth-child(odd) img{
+    float: right;
+    clear: right;
+    margin-right: 37px;
+}
+.medlem h2{
+    font-family: titleFont;
+    font-size: 20pt;
+    margin-left: 0;
+}
+.medlem p{
+    margin-left: 0;
+}
+.medlem a{
+    text-decoration: underline;
+}
+/* Individuelle Medlems Sider */
+.omOsHeaderMedlem img{
+    display: block;
+    width: 100vw;
+}
+.omOsHeaderMedlem{
+    margin-bottom: 2em;
+}
+.medlemsTitle{
+    height: 70px !important;
+    width: 360px !important;
+}
+.bio{
+    position: relative;
+}
+.bio h3{
+    margin-bottom: 0;
+    font-size: 24px;
+}
+.bio h4{
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    margin-left: 37px;
+    font-family: edita;
+    font-style: italic;
+    font-size: 36px;
+}
+.bio img{
+    opacity: 0.5;
+    z-index: -1;
+}
+.andre{display: none;}
+.pcAndre h2{
+    margin-top: 3em;
+    margin-left: 0;
+}
+.andre h2{
+    margin-top: 5em;
+}
+.andre img{
+    width: 200px;
+    height: auto;
+}
+.andre a:nth-child(even){
+    float: right;
+    clear: both
+}
+/* Fred Paa Jord Collage */
+.fredCollage1{
+    position: absolute;
+    bottom: -3em;
+    width: 180px;
+}
+.fredCollage2{
+    display: none;
+    position: absolute;
+    width: 180px;
+}
+.fredCollage3{
+    top: 50%;
+    transform: translateY(-25%);
+    right: 0;
+    position: absolute;
+    width: 180px;
+}
+/* Lyng Collage */
+.lyngCollage1{
+    position: absolute;
+    bottom: -3em;
+    width: 300px;
+}
+.lyngCollage2{
+    display: none;
+    position: absolute;
+    width: 180px;
+}
+/* fejl Collage */
+.fejlCollage1{
+    position: absolute;
+    bottom: -3em;
+    width: 300px;
+}
+/* Pharmer */
+.phamCollage1{
+    position: absolute;
+    width: 40vw;
+    top: 0%;
+    right: 0;
+}
+.phamCollage2{
+    position: absolute;
+    display: none;
+}
+.phamCollage3{
+    position: absolute;
+    left: 0;
+    width: 60vw;
+    bottom: 15%;
+}
+
+ .buchCollage1{
+    position: absolute;
+    width: 45vw;
+    top: 0%;
+    left: 0.5rem;
+}
+.buchCollage2{
+    position: absolute;
+    right: 0;
+    width: 13rem;
+    bottom: 12rem;
+}
+#gruppebillede {
+    position: absolute;
+    width: 300px;
+    left: 1450px;
+    top: 1650px;
+    display: none;
+    
+}
+#gruppebillede2 {
+    position: absolute;
+    width: 400px;
+    left: 200px;
+    top: 1100px;
+    display: none;
+}
+#gruppebillede3 {
+    position: absolute;
+    width: 400px;
+    left: 950px;
+    top: 800px;
+    display: none;
+}
+#gruppebillede4 {
+    position: absolute;
+    width: 500px;
+    left: 800px;
+    top: 1300px;
+    display: none;
+}
+
+
+@media screen and (min-width: 1050px) {
+    .soMeLinks-forside{
+        display: none;
+    }
+    footer{
+        position: absolute;
+        text-align: left;
+        margin-left: 2em;
+    }
+    h1{
+        margin-top: 0px;
+    }
+
+/* Landing Page PC */
+    .landingpage{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .landingpage img{
+        width: 100%;
+        height: 50vh;
+        object-fit: fill;
+    }
+    .landingpage a {
+        width: 50%;
+        height: 50%;
+    }
+    .landingpage h1{display: none;}
+    /* Fjerner mobil nav */
+    .burgerMenu img{display: none;}
+    #dropdown{display: block !important;}
+    .mobileNav .soMe{display: flex;}
+    /* Nav animation https://codepen.io/mehi/pen/MyWqPM
+    underline fra venstre til højre*/
+    /* nav a{font-size: 24px;} */
+    .mobileNav #dropdown li{
+        margin-top: 1em;
+    }
+    .mobileNav{
+        float: left;
+        margin-right: 1em;
+    }
+    .mobileNav a{
+        color: rgb(105, 105, 105); 
+        transition: 0.3s ease;
+        font-family: altTitleFont;
+    }
+    .mobileNav a::after{
+        content: '';
+        position: absolute;
+        width: 0; height: 3px;
+        display: block;
+        margin-top: 5px;
+        transition: width .2s ease;
+        -webkit-transition: width .2s ease;
+    }
+    .mobileNav a:hover::after{
+        width:  7em;
+        background: #fff;
+    }
+    .mobileNav a:hover{
+        color: #fff;
+    }
+    /* Fjerner Hover on SoMe effekten */
+    .mobileNav .soMe a::after{
+        width: 0;
+    }
+    .mobileNav-active{
+        font-family: titleFont !important;
+        color: white !important;
+    }
+    .mobileNav-active::after{
+        width: 7em !important;
+        background: #fff;
+    }
+    /* Musik */
+    .musicHeader h1{
+        font-size: 80px;
+        margin-top: 0.5em;
+    }
+    .musicLinks ul{
+        width: 60vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .musicLinks li{
+        margin: 1em;
+        width: 45%;
+    }
+    .newMusic{
+        margin-left: min(10%,395px);
+        margin-right: min(10%,395px);
+    }
+    .newMusic iframe{
+        height: 700px;
+    }
+    .newMusic h2, .newMusic h3{
+        font-size: 50px;
+    }
+    .newMusic h2{
+        margin-left: 0;
+        position: absolute;
+    }
+    .newMusic p{font-size: 28px;}
+    .moreMusic{
+        font-size: 40px;
+        margin-left: min(10%,395px);
+        margin-right: min(10%,395px);
+    }
+    .moreMusic h2{
+        margin-bottom: 0.2em;
+    }
+    .moreMusic iframe{
+        width: 100%;
+    }
+    /* Vi er HOPSCREEK */
+    .omOsHeader{position: relative; z-index: -1;}
+    .omOsHeader img{
+        display: block; 
+        position: absolute;
+    }
+    .omOsHeader div{
+        display: block;
+        margin-left: calc(30% + 5vw);
+        margin-right: 30%;
+    }
+    #blurGruppe{
+        left: 19%;
+        z-index: -1;
+        width: 18vw;
+    }
+    #elevatorGruppe{
+        top: 5em;
+        right: 100px;
+        width: 25vw;
+        z-index: -1;
+    }
+    #gruppebillede {
+        position: absolute;
+        width: 300px;
+        left: 1450px;
+        top: 1650px;
+    }
+    #gruppebillede2 {
+        position: absolute;
+        width: 400px;
+        left: 200px;
+        top: 1100px;
+    }
+    #gruppebillede3 {
+        position: absolute;
+        width: 400px;
+        left: 950px;
+        top: 800px;
+    }
+    #gruppebillede4 {
+        position: absolute;
+        width: 500px;
+        left: 800px;
+        top: 1300px;
+    }
+    .omOsHeader h1{
+        font-size: 80px;
+        margin-bottom: 0.1em;
+    }
+    .omOsHeader h2{
+        font-size: 36px;
+    }
+    .omOsHeader p, .omOsHeader a{
+        font-size: 20px;
+    }
+    .omOsHeader a{
+        text-decoration: underline;
+    }
+    .omOsHeader p {text-align: left;}
+    .medlemmer{
+        position: relative;
+        height: 140vh;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .medlemmer img{
+        width: 30vw;
+        height: auto;
+        margin-left: 37px;
+        margin-right: 37px;
+        z-index: -1;
+    }
+    .medlem h2{
+        font-size: 40px !important;
+        font-size: 3vw;
+        margin-bottom: 0;
+    }
+    .medlem p, .medlem a{
+        font-size: 20px;
+        z-index: 1;
+    }
+    .medlem p{
+        font-family: titleFont;
+        font-size: 34px;
+        color: rgb(199, 199, 199);
+    }
+    /* Individuel positionering af tekst på medlemmer */
+    .medlem div{position: absolute;}
+    .medlem-buch{
+        position: relative;
+    }
+    .medlemTextWrapperBuch{
+        right: 12em;
+        top: 0;
+        z-index: 1;
+    }
+    .medlem-fred{
+        position: relative;
+        top: -13em;
+        left: 15%;
+    }
+    .medlemTextWrapperFred{
+        top: 14em;
+        left: -2em;
+        z-index: 1;
+    }
+    .medlem-lyng{
+        position: relative;
+        top: 8em;
+        right: 12em;
+    }
+    .medlemTextWrapperLyng{
+        top: 22em;
+        right: -6em;
+        z-index: 1;
+    }
+    .medlem-pham{
+        /* position: relative; */
+        top: -10em;
+        left: 5em;
+    }
+    .medlemTextWrapperPham{
+        top: 40em;
+        z-index: 1;
+    }
+    .medlem-støv{
+        position: relative;
+        top: 20em;
+        right: 4em;
+    }
+    .medlemTextWrapperStøv{
+        top: 40em;
+        right: 18em;
+        z-index: 1;
+    }
+    /* Koncerter */
+    .pcKoncerter{
+        float: right;
+        margin-top: 0;
+        width: calc(100vw - 425px);
+    }
+    .months button{
+        width: 110px;
+    }
+    .tickets{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .ticket{
+        width: 16em;
+        height: 14.5em;
+        margin: 1em;
+    }
+    /* Billet Tekst styling */
+    .tickettext{
+        padding: 1em 0;
+    }
+    .tickettext h3{
+        font-size: 28px; 
+        margin-bottom: 0;
+        font-family: altTitleFont;
+    } 
+    .tickettext h2{
+        font-size: 42px; 
+        margin: 0;
+        white-space: nowrap;
+    }
+    .tickettext p{
+        font-size: 20px;
+    }
+    .tickettext a{
+        font-size: 30px;
+        display: block;
+        text-align: center;
+        border: transparent;
+        transition: .3s ease-in;
+    }
+    .tickettext a:hover{
+        border: 1px solid white;
+    }
+    .pcKoncerter header h1{
+        margin-top: 0.5em;
+        margin-left: 1em;
+        margin-bottom: 0;
+        font-size: 80px;
+    }
+    /* Individuelle Medlems side */
+    .andre{display: block;}
+    .pcAndre{display: none;}
+    .omOsHeaderMedlem img{
+        display: block;
+        position: relative;
+        left: -1em;
+        width: auto;
+    }
+    .introCollage{
+        width: 60% !important;
+    }
+    .bio{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 30vw;
+    }
+    .bio img{
+        opacity: 0.7;
+    }
+    .bio h3{
+        margin-top: 3em;
+        font-size: 36px;
+    }
+    .bio h4{
+        font-size: 60px;
+        white-space: nowrap;
+    }
+    .andre img{
+        width: 30vw;
+    }
+    .andre h2{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 1em;
+    }
+    .andre img:hover{
+        opacity: 0.7;
+    }
+    .andre div a:nth-child(even){
+        float: none;
+    }
+    .andre div{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Fred Paa Jord Collage */
+    .fredCollage1{
+        top: -2em;
+        transform: translateX(-50%);
+        width: 325px;
+    }
+    .fredCollage2{
+        display: block;
+        width: 500px;
+        top: 50%;
+        right: -25vw;
+        transform: translateY(-50%);
+    }
+    .fredCollage3{
+        top: 100%;
+        transform: translate(-150%, -50%);
+        width: 275px;
+    }
+
+        /* Lyng Collage */
+    .lyngCollage1{
+        top: -2em;
+        transform: translateX(-85%);
+        width: 525px;
+        position: absolute;
+
+    }
+    .lyngCollage2{
+        display: block;
+        width: 500px;
+        top: 50%;
+        right: -25vw;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    /* fejl Collage */
+    .fejlCollage1{
+        position: absolute;
+        top: 10%;
+        left: -21em;
+        width: 400px;
+    }
+    /* Pham Collage */
+    .phamCollage1{
+        width: 16vw;
+        top: -7em;
+        right: -60%;
+    }
+    .phamCollage2{
+        display: block;
+        width: 400px;
+        top: 50%;
+        right: -25vw;
+        transform: translateY(-50%);
+    }
+    .phamCollage3{
+        left: -50%;
+        width: 70%;
+    }
+
+    .buchCollage1{
+        position: absolute;
+        left: -10rem;
+        top: -1em;
+        width: 400px;
+    }
+    .buchCollage2{
+        position: absolute;
+        left: 10em;
+        bottom: 10em;
+        width: 35rem;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .soMeKoncerter{display: none;}
+    .medlem h2{font-size: 50px !important;}
+    .medlem img{width: 400px;}
+    .medlemTextWrapperStøv{top: 45em}
+    .medlemTextWrapperFred{top: 17em;}
+    .medlemTextWrapperBuch{top: -1em;}
+    .bio{width: 25vw;}
+    .phamCollage1{
+        width: 14vw;
+        top: -7em;
+        right: -60%;
+    }
+    .phamCollage2{
+        width: 500px;
+    }
+    .phamCollage3{
+        width: 18vw;
+    }
+}
+
+@media screen and (min-width: 1530px){
+    .bio{width: 20vw;}
+    .medlem img{width: 520px;}
+    .medlem-buch{top: 5em;}
+    .medlem-fred{top: -4em;}
+    .medlemTextWrapperBuch{
+        right: 20em;
+        top: -2em;
+        }
+    .medlem-lyng{
+        top: 6em;
+        right: 12em;
+    }
+    .medlemTextWrapperLyng{
+        top: 32em;
+        right: -2em;
+    }
+    .medlem-pham{top: -2em;}
+    .medlemTextWrapperPham{
+        top: 53em;
+    }
+    .medlem-støv{
+        top: 16em;
+        right: 35em;
+    }
+    .medlemTextWrapperStøv{
+        top: 64em;
+        right: -10em;
+    }
+    #blurGruppe{
+        width: 20vw;
+    }
+    .omOsHeader div{
+        margin-left: 40%;
+    }
+    .phamCollage1{
+        opacity: 1 !important;
+        filter:saturate(0.5);
+    }
+    .phamCollage2{
+        opacity: 1 !important;
+        filter:saturate(0.5);
+    }
+
+    .buchCollage1{
+        position: absolute;
+        left: -10rem;
+        top: -1em;
+        width: 400px;
+    }
+    .buchCollage2{
+        position: absolute;
+        left: 10em;
+        bottom: 1em;
+        width: 50rem;
+    }
+
+}
