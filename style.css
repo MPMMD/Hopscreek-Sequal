@@ -459,9 +459,12 @@ footer img{
         display: none;
     }
     footer{
-        position: absolute;
-        text-align: left;
-        margin-left: 2em;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0,0,0,0.7);
+        border-radius: 0.5em 2em 0 0;
     }
     h1{
         margin-top: 0px;
