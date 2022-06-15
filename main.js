@@ -7,3 +7,9 @@
        x.style.display = "block";
      }
    }
+
+
+  //  https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load - metode 3
+   $("header").delay(1000).animate({"opacity": "1"}, 700);
+   $("section").delay(1000).animate({"opacity": "1"}, 700);
+   $("div").delay(1000).animate({"opacity": "1"}, 700);
