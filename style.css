@@ -498,6 +498,8 @@ footer img{
     .mobileNav{
         float: left;
         margin-right: 1em;
+        position: relative;
+        top: 5em;
     }
     .mobileNav a{
         color: rgb(105, 105, 105); 
