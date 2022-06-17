@@ -886,7 +886,6 @@ footer img{
     }
 }
 @media screen and (min-width: 1366px) {
-    .soMeKoncerter{display: none;}
     .medlem h2{font-size: 50px !important;}
     .medlem img{width: 400px;}
     .medlemTextWrapperStøv{top: 45em}
