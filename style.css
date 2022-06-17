@@ -572,7 +572,8 @@ footer img{
         margin-bottom: 0.2em;
     }
     .moreMusic iframe{
-        width: 100%;
+        width: 20%;
+
     }
     /* Vi er HOPSCREEK */
     .omOsHeader{position: relative; z-index: -1;}
