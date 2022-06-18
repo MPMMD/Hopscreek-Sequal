@@ -668,18 +668,18 @@ footer img{
         position: relative;
     }
     .medlemTextWrapperBuch{
-        right: 12em;
-        top: 0;
+        right: 14em;
+        top: -2em;
         z-index: 1;
     }
     .medlem-fred{
         position: relative;
-        top: -13em;
+        top: 5%;
         left: 15%;
     }
     .medlemTextWrapperFred{
-        top: 14em;
-        left: -2em;
+        top: -3em;
+        left: -5%;
         z-index: 1;
     }
     .medlem-lyng{
@@ -693,12 +693,12 @@ footer img{
         z-index: 1;
     }
     .medlem-pham{
-        /* position: relative; */
-        top: -10em;
+        position: relative;
+        top: 10em;
         left: 5em;
     }
     .medlemTextWrapperPham{
-        top: 40em;
+        top: 24em;
         z-index: 1;
     }
     .medlem-støv{
@@ -707,7 +707,7 @@ footer img{
         right: 4em;
     }
     .medlemTextWrapperStøv{
-        top: 40em;
+        top: 44em;
         right: 18em;
         z-index: 1;
     }
@@ -890,7 +890,6 @@ footer img{
     .medlem h2{font-size: 50px !important;}
     .medlem img{width: 400px;}
     .medlemTextWrapperStøv{top: 45em}
-    .medlemTextWrapperFred{top: 17em;}
     .medlemTextWrapperBuch{top: -1em;}
     .bio{width: 25vw;}
     .phamCollage1{
@@ -910,22 +909,21 @@ footer img{
     .bio{width: 20vw;}
     .medlem img{width: 520px;}
     .medlem-buch{top: 5em;}
-    .medlem-fred{top: -4em;}
+    .medlem-fred{top: 10em;}
     .medlemTextWrapperBuch{
         right: 20em;
         top: -2em;
         }
     .medlem-lyng{
         top: 6em;
-        right: 12em;
+        right: 8em;
     }
     .medlemTextWrapperLyng{
         top: 32em;
         right: -2em;
     }
-    .medlem-pham{top: -2em;}
     .medlemTextWrapperPham{
-        top: 53em;
+        top: 34em;
     }
     .medlem-støv{
         top: 16em;
