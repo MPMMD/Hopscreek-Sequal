@@ -757,11 +757,12 @@ footer img{
         border: 1px solid white;
     }
     .pcKoncerter header h1{
-        margin-top: 0.5em;
+        margin-top: 40px;
         margin-left: 0;
         margin-bottom: 0;
         font-size: 80px;
     }
+    .pcKoncerterNav{margin-top: 1em;}
     /* Individuelle Medlems side */
     .andre{display: block;}
     .pcAndre{display: none;}
