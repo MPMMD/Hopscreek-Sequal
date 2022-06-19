@@ -712,11 +712,6 @@ footer img{
         z-index: 1;
     }
     /* Koncerter */
-    .pcKoncerter{
-        /* float: right; */
-
-        /* width: calc(100vw - 425px); */
-    }
     .months button{
         width: 110px;
     }
