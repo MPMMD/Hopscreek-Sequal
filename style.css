@@ -646,6 +646,10 @@ footer img{
         margin-left: 37px;
         margin-right: 37px;
         z-index: -1;
+        transition: ease .2s;
+    }
+    .medlem img:hover{
+        transform: scale(1.2);
     }
     .medlem h2{
         font-size: 40px !important;
@@ -711,6 +715,9 @@ footer img{
         z-index: 1;
     }
     /* Koncerter */
+    .pcKoncerter{
+        width: 85%;
+    }
     .months button{
         width: 110px;
     }
