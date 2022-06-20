@@ -541,14 +541,14 @@ footer img{
         font-size: 80px;
         margin-top: 0.5em;
     }
-    .musicLinks ul{
-        width: 60vw;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .musicLinks{
+        width: 800px;
+        margin-left: calc(50vw - 385px);
     }
     .musicLinks li{
+        float: left;
         margin: 1em;
-        width: 45%;
+        width: 330px;
     }
     .newMusic{
         margin-left: min(10%,395px);
