@@ -306,7 +306,9 @@ footer img{
     margin-left: 0;
 }
 .medlem p{
+    font-family: edita;
     margin-left: 0;
+    font-weight: 500;
 }
 .medlem a{
     text-decoration: underline;
@@ -661,7 +663,6 @@ footer img{
         z-index: 1;
     }
     .medlem p{
-        font-family: titleFont;
         font-size: 34px;
         color: rgb(199, 199, 199);
     }
