@@ -16,10 +16,13 @@
   // toggle  https://codepen.io/fahim04blue/pen/KKNvOZe
    const julibtn = document.querySelector('#juli');
    const junibtn = document.querySelector('#juni');
+   const augbtn = document.querySelector('#aug');
+   const septbtn = document.querySelector('#sept');
    const juni = document.querySelectorAll('.ticket-juni')
    const juli = document.querySelectorAll('.ticket-juli')
+   const aug = document.querySelectorAll('.ticket-aug')
 
-
+// Der ville så være en display none til hver af de andre måneder
    julibtn.addEventListener("click", function(){
     juni.forEach(junimonth=>{
       junimonth.style.display = "none";
@@ -27,7 +30,7 @@
     juli.forEach(julimonth=>{
       julimonth.style.display = "block";
     })   
-   });
+  });
 
    junibtn.addEventListener("click", function(){
     juni.forEach(junimonth=>{
@@ -37,3 +40,20 @@
       julimonth.style.display = "none";
     })         
  });
+
+ augbtn.addEventListener("click", function(){
+  juni.forEach(junimonth=>{
+    junimonth.style.display = "none";
+  })   
+  juli.forEach(julimonth=>{
+    julimonth.style.display = "none";
+  })         
+});
+septbtn.addEventListener("click", function(){
+  juni.forEach(junimonth=>{
+    junimonth.style.display = "none";
+  })   
+  juli.forEach(julimonth=>{
+    julimonth.style.display = "none";
+  })         
+});
